@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	min-height: 20vh;
+	border-bottom: 1px solid black;
+}
+
+.section-1 {
+	background-color: red;
+}
+
+.section-2 {
+	background-color: red;
+}
+
+.section-3 {
+	background-color: red;
+}
+
+.red {
+	background-color: red;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.green {
+	background-color: green;
+}
+
+.black {
+	background-color: black;
+}
+
+.grey {
+	background-color: grey;
+}
+
+.navigation {
+	z-index: 1;
+}
