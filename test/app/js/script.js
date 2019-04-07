@@ -1,45 +1,21 @@
-;(function(){
+let money = prompt("Ваш бюджет на месяц?", ''),
+	time = prompt('Введите дату в формате YYYY-MM-DD', '');
 
-	let login = prompt('Логин', '');
-	let answer;
+let appData = {
+	budget: money,
+	expenses: {},
+	optionalExpenses: {},
+	income: [],
+	timeData: time,
+	savings: false
+};
 
-	if (login == 'Админ') {
+let a1 = prompt("Введите обязательную статью расходов в этом месяце", ''),
+	a2 = prompt("Во сколько обойдется?", ''),
+	a3 = prompt("Введите обязательную статью расходов в этом месяце", ''),
+	a4 = prompt("Во сколько обойдется?", '');
 
-		let password  = prompt('Пароль', '');
+appData.expenses.a1 = a2;
+appData.expenses.a3 = a4;
 
-		answer = Check(password);
-	}
-
-	else if (login == null) {
-
-		answer = 'Вход отменён';
-	}
-
-	else {
-
-		answer = 'Я вас не знаю';
-	}
-
-	alert(answer);
-
-})();
-
-function Check(password) {
-
-	if(password == 'Черный Властелин') {
-
-		answer = 'Добро пожаловать!'
-	}
-
-	else if(password == null) {
-
-		answer = 'Вход отменён'
-	} 
-
-	else {
-
-		answer = 'Пароль неверен'
-	}
-
-	return answer;
-}
+alert(appData.budget / 30);
